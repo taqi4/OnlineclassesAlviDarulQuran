@@ -1,0 +1,339 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+nav {
+    /* background-color: #4bc02e;*/
+    position: fixed;
+    height: 15vh;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #111D4A;
+    z-index: 1;
+}
+
+.head {
+    /*   background-image: url("./quranimage.jpeg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: #111D4A;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    text-shadow: 3px 3px 9px black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.repair {
+    position: absolute;
+    top: 20vh;
+    margin-left: 2.5%;
+}
+
+.description {
+    border-radius: 15px;
+    border: 2px solid #111D4A;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.50);
+}
+
+.info {
+    position: relative;
+    margin-left: auto;
+    color: #111D4A;
+    font-size: 1.5rem;
+}
+
+.description h2 {
+    height: 20%;
+    color: #111D4A;
+    font-size: 2rem;
+    font-family: monospace;
+    border-bottom: 2px solid black;
+}
+
+.description h3 {
+    color: #63D471;
+}
+
+section {
+    position: absolute;
+    top: 15vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Akaya Kanadaka', cursive, monospace, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #E4FF1A;
+    cursor: pointer;
+}
+
+.navigation:hover {
+    transition: 0.5s ease-out;
+    transform: translateY(-10px);
+}
+
+.navigation {
+    letter-spacing: 2px;
+    font-family: 'Akaya Kanadaka', cursive, monospace, sans-serif;
+    transition: 0.5s ease-out;
+}
+
+.logo {
+    height: 100%;
+    width: 50%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+section {
+    width: 95%;
+    margin-left: 2.5%;
+    text-align: center;
+    margin-right: 2.5%;
+}
+
+.toggle-btn {
+    display: none;
+    right: 10px;
+    position: fixed;
+}
+
+.toggle-btn span {
+    margin: 5px;
+    display: block;
+    background: #E4FF1A;
+    display: block;
+    width: 30px;
+    height: 3px;
+}
+
+.taught {
+    border: 2px solid #111D4A;
+    border-radius: 15px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 50%;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.50);
+    background-color: white;
+    color: #63D471;
+}
+
+.taught h2 {
+    color: #111D4A;
+    font-family: monospace;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.taught ul {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-left: 6vw;
+}
+
+.teachers {
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.50);
+    background-color: white;
+    margin-bottom: 3vh;
+}
+
+.teachers h2 {
+    font-family: monospace;
+    color: #111D4A;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+
+.teachers li {
+    color: #63D471;
+    font-size: 1.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 2vw;
+    width: 50%;
+}
+
+#last {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.feature {
+    width: 100%;
+    border: 2px solid #111D4A;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.50);
+    margin-bottom: 3vh;
+    background-color: white;
+}
+
+.feature h2 {
+    font-family: monospace;
+    color: #111D4A;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+
+.feature h4 {
+    font-size: 1.5rem;
+    color: #63D471;
+}
+
+.start {
+    width: 100%;
+    border: 2px solid #111D4A;
+    border-radius: 15px;
+    color: #111D4A;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.50);
+    background-color: #E4FF1A;
+}
+
+.start span {
+    font-family: monospace;
+}
+
+.start h2 {
+    font-family: monospace;
+    color: #111D4A;
+    border-bottom: 2px solid black;
+    font-size: 2rem;
+}
+
+.start .whatsapp {
+    height: 30px;
+    width: 30px;
+}
+
+.cont {
+    position: fixed;
+    width: 20vw;
+    height: 20vh;
+}
+
+.description {
+    margin-top: 3vh;
+    color: red;
+}
+
+.description h3 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: monospace, sans-serif;
+}
+
+@media only screen and (max-width:768px) {
+    nav {
+        position: relative;
+    }
+    .logo {
+        height: 100%;
+        width: 60%;
+    }
+    .logo img {
+        height: 100%;
+    }
+    .toggle-btn {
+        position: fixed;
+        z-index: 1;
+        display: block;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: 00.5s;
+    }
+    .nav-links {
+        display: flex;
+        margin-left: auto;
+        position: absolute;
+        background: #111D4A;
+        top: -200%;
+        right: -100%;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        transition: 0.5s ease-out;
+        border-radius: 100%;
+    }
+    .navigation {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }
+    .navigation a {
+        color: #E4FF1A;
+    }
+    .nav-links.open {
+        position: fixed;
+        top: 0;
+        right: -13px;
+        border-radius: 0%;
+        transition: 0.5s ease-out;
+    }
+    .toggle-btn.active #one {
+        margin: 0%;
+        background-color: red;
+        transition: 0.5s;
+        transform: rotate(45deg) translate(-5px, 10px);
+    }
+    .toggle-btn.active #two {
+        margin: 0%;
+        opacity: 0;
+    }
+    .toggle-btn.active #third {
+        background-color: red;
+        transform: rotate(-45deg) translate(-5px, -10px);
+        transition: 0.5s;
+        margin: 0%;
+        transition: 0.5s;
+    }
+    .taught {
+        width: 100%;
+    }
+    .teachers {
+        width: 100%;
+    }
+    .feature {
+        width: 100%;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .start {
+        width: 100%;
+    }
+}

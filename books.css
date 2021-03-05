@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.books {
+    position: absolute;
+    top: 20vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 3vw;
+    row-gap: 3vh;
+    height: fit-content;
+}
+
+.book {
+    border-radius: 15px;
+    border: 2px solid #111D4A;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.50);
+    width: 30vw;
+    height: 40vh;
+    text-align: center;
+    color: #111D4A;
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+.book img {
+    width: 90%;
+    height: 50%;
+    margin: 2vh;
+}
+
+.book a {
+    color: #111D4A;
+}
+
+@media only screen and (max-width:768px) {
+    .books {
+        grid-template-columns: auto;
+        place-items: center;
+    }
+    .book {
+        width: 90%;
+        height: fit-content;
+    }
+    .book img {
+        width: 80%;
+        height: 60%;
+        margin: 0;
+    }
+}
